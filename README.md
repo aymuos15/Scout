@@ -1,18 +1,49 @@
-# Installs
+# Scout: File Browsing and Searching Tool
 
-You need fzf and bat.
+Scout combines [fzf](https://github.com/junegunn/fzf), [bat](https://github.com/sharkdp/bat), and [ripgrep](https://github.com/BurntSushi/ripgrep) for interactive file browsing and searching.
 
-# Command
+---
 
-`browse` (You can set up your own alias)
+## Examples
 
-You can switch between the two using a hotkey. F2 by default.
+### File Browsing
 
-# Show Example (normal fzf preview)
+![File Browsing Example](show.png)
 
-![image](show.png)
-
-
-# Search Example 
+### Text Searching
 
 ![Search Example](search.png)
+
+---
+
+## Requirements
+
+- [fzf](https://github.com/junegunn/fzf)
+- [bat](https://github.com/sharkdp/bat)
+- [ripgrep](https://github.com/BurntSushi/ripgrep)
+
+---
+
+## Installation
+
+Add to alias:
+
+```bash
+alias browse='src.sh'
+```
+
+Reload your shell config:
+
+```bash
+source ~/.bashrc  # or its equivalent.
+```
+
+---
+
+## Usage
+
+Run `browse` and press **F2** to toggle modes.
+
+```bash
+browse
+```
